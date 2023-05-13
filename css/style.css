@@ -183,7 +183,7 @@ header {
   grid-template-columns: 300px auto; /* Первая колонка 300px, остальные авто */
 }
 
-.tabs_btn {
+.tabs__btn {
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -221,6 +221,7 @@ header {
 .tabs__content-img {
   grid-row: 1/-1; /* Начинается на первой линии и заканчивается на последней */
   align-self: stretch; /* Чтобы элемент растягивался  */
+  object-fit: cover;
 }
 
 .tabs__content-box h3 {
@@ -571,6 +572,21 @@ header {
 /*
   Мобильная адаптация
 */
+@media (max-width: 992px) {
+  .tabs {
+    display: block;
+  }
+
+  .tabs__btn {
+    display: block;
+    column-count: 2;
+  }
+
+  .tabs__btn-item {
+    display: block;
+  }
+}
+
 @media (max-width: 768px) {
   .title {
     font-size: 66px;
@@ -590,6 +606,20 @@ header {
   .top {
     text-align: center;
   }
+
+  .features__titles {
+    display: block;
+  }
+
+  .tabs__content-item {
+    display: block;
+  }
+
+  .video {
+    width: auto;
+    height: 250px;
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 420px) {
@@ -599,5 +629,13 @@ header {
 
   .subtitle {
     font-size: 20px;
+  }
+
+  .tabs__btn {
+    column-count: 1;
+  }
+
+  .features__text {
+    font-size: 32px;
   }
 }
