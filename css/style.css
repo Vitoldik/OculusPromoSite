@@ -602,6 +602,14 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
+
+  .contacts__inner {
+    display: block;
+  }
+
+  .contacts__form {
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -660,6 +668,10 @@ header {
   .accessories__items {
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
+  }
+
+  .accessories__text {
+    font-size: 28px;
   }
 }
 
