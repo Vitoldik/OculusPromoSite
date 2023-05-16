@@ -602,7 +602,7 @@ header {
   }
 }
 
-@media (max-width: 568px) {
+@media (max-width: 640px) {
   .buy-btn {
     flex-direction: column;
     margin: 0 auto;
@@ -611,7 +611,9 @@ header {
   .top {
     text-align: center;
   }
+}
 
+@media (max-width: 568px) {
   .features__titles {
     display: block;
   }
