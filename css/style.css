@@ -685,7 +685,13 @@ header {
   }
 
   .tabs__content-item {
+    position: relative;
     display: block;
+    height: 0;
+  }
+
+  .tabs__content-item--active {
+    height: auto;
   }
 
   .video {
