@@ -589,6 +589,17 @@ header {
 /*
   Мобильная адаптация
 */
+@media (max-width: 1140px) {
+  .footer .menu {
+    display: none;
+  }
+
+  .footer .nav {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 @media (max-width: 992px) {
   .tabs {
     display: block;
@@ -728,6 +739,17 @@ header {
 
   .nav {
     grid-template-columns: 1fr 2fr 1fr;
+  }
+
+  .footer .nav {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .footer .social {
+    order: -1;
+    margin-bottom: 20px;
+    gap: 30px;
   }
 }
 
